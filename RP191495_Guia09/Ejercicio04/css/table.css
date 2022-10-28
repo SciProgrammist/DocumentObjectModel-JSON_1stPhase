@@ -1,0 +1,62 @@
+#tableholder {
+    height: auto;
+    margin: 24px auto;
+    width: 100%;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    position: absolute;
+    table-layout: auto;
+    top: 280px;
+    width: 99%;
+}
+
+table caption {
+    font: bold 2em/2 Tahoma, Helvetica, "Liberation Sans";
+    color: MidnightBlue;
+    background-color: #333;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 3px 6px rgba(60, 60, 90, 0.75);
+    padding: 12px auto;
+}
+
+thead {
+    background: #395870;
+    color: #fff;
+}
+
+th {
+    background: MidnightBlue;
+    color: #fcfcf0;
+    padding: 4px 3px;
+    min-width: 19%;
+}
+
+td {
+    color: MidnightBlue;
+    padding: 4px 3px;
+    min-width: 19%;
+}
+
+tbody tr:nth-child(even) {
+    background: #f6f6df;
+}
+
+tbody tr:nth-child(odd) {
+    background: #ececcf;
+}
+
+td {
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+
+td:first-child {
+    border-left: 1px solid #cecfd5;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Creación de una tabla</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/modernform.css" />
+<link rel="stylesheet" href="css/table.css" />
+<script src="js/tabladom.js"></script>
+</head>
+<body>
+<header>
+<h1>Creación de tablas dinámicamente</h1>
+</header>
+<section>
+<article>
+<div id="formholder">
+<ul class="tabs blue">
+<li>
+<input name="tabs blue" id="tab1" checked="" type="radio">
+    <label for="tab1">Datos de la tabla</label>
+<div id="tab-content1" class="tab-content">
+<p>Ingresa los datos para crear la tabla.</p>
+<form name="frmtable" id="frmtable">
+<!-- <form name="register" action=""> -->
+<span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+<input type="number" name="rows_text" id="rows_text" required="required"
+pattern="\d{1,3}" placeholder="(Filas)" class="field"/>
+<span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+<input type="number" name="columns_text" id="columns_text" 
+required="required" pattern="\d{1,3}"placeholder="(Columnas)" class="field"
+/>
+<div class="accounttype">
+<input type="checkbox" value="si" id="radioOne"name="chkhead"
+checked="checked" />
+<label for="radioOne" class="radio"checked="">Incluir celda de
+encabezados</label>
+</div>
+<div class="btn">
+<input type="button" name="btnSend" id="btnSend" value="Crear tabla" />
+</div>
+</form>
+</div>
+</li>
+</ul>
+</div>
+</article>
+<article>
+<div id="tableholder">
+</div>
+</article>
+</section>
+</body>
+</html>
